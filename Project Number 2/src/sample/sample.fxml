@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <tabs>
+    <Tab text="Pop">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="32.0" layoutY="22.0" prefHeight="17.0" prefWidth="117.0" text="Pop Playlist">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="popList" layoutX="32.0" layoutY="50.0" prefHeight="303.0" prefWidth="262.0" />
+                  <Label layoutX="327.0" layoutY="71.0" text="Song Title:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="355.0" layoutY="109.0" text="Artist:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtPopTitle" layoutX="406.0" layoutY="67.0" promptText="Song Title" />
+                  <TextField fx:id="txtPopArtist" layoutX="406.0" layoutY="104.0" promptText="Artist" />
+                  <Button fx:id="btnAddPop" layoutX="422.0" layoutY="142.0" mnemonicParsing="false" onAction="#addPop" text="Add to Pop Playlist">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSavePop" layoutX="318.0" layoutY="250.0" mnemonicParsing="false" onAction="#savePop" text="Save to Pop Playlist">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLoadPop" layoutX="318.0" layoutY="287.0" mnemonicParsing="false" onAction="#loadPop" text="View Playlist">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDeletePop" layoutX="318.0" layoutY="324.0" mnemonicParsing="false" onAction="#deletePop" text="Delete Song">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="HipHop">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="hipHopList" layoutX="32.0" layoutY="50.0" prefHeight="303.0" prefWidth="262.0" />
+                  <Label layoutX="32.0" layoutY="22.0" prefHeight="17.0" prefWidth="208.0" text="HipHop Playlist">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnSaveHipHop" layoutX="318.0" layoutY="250.0" mnemonicParsing="false" onAction="#saveHipHop" text="Save to HipHop Playlist">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLoadHipHop" layoutX="318.0" layoutY="287.0" mnemonicParsing="false" onAction="#loadHipHop" text="View Playlist">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDeleteHipHop" layoutX="318.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteHipHop" text="Delete Song">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnAddHipHop" layoutX="411.0" layoutY="142.0" mnemonicParsing="false" onAction="#addHipHop" text="Add to HipHop Playlist">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="327.0" layoutY="71.0" text="Song Title:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="355.0" layoutY="109.0" text="Artist:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtHipHopTitle" layoutX="406.0" layoutY="67.0" promptText="Song Title" />
+                  <TextField fx:id="txtHipHopArtist" layoutX="406.0" layoutY="104.0" promptText="Artist" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Indie">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="indieList" layoutX="32.0" layoutY="50.0" prefHeight="303.0" prefWidth="262.0" />
+                  <Label layoutX="32.0" layoutY="22.0" text="Indie Playlist">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnAddIndie" layoutX="419.0" layoutY="142.0" mnemonicParsing="false" onAction="#addIndie" text="Add to Indie Playlist">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSaveIndie" layoutX="318.0" layoutY="250.0" mnemonicParsing="false" onAction="#saveIndie" text="Save to Indie Playlist">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLoadIndie" layoutX="318.0" layoutY="287.0" mnemonicParsing="false" onAction="#loadIndie" text="View Playlist">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDeleteIndie" layoutX="318.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteIndie" text="Delete Song">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="327.0" layoutY="71.0" text="Song Title:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="355.0" layoutY="109.0" text="Artist:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtIndieTitle" layoutX="406.0" layoutY="67.0" promptText="Song Title" />
+                  <TextField fx:id="txtIndieArtist" layoutX="406.0" layoutY="104.0" promptText="Artist" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
